@@ -52,11 +52,12 @@ async function getAnalyticsData() {
     revenue: Number(revenue.toFixed(2)),
   }))
 
-  // Stock by category (for bar chart)
+  // Stock by category (FIXED - handles null category)
   const stockByCategory: { [key: string]: number } = {}
   products.forEach((product) => {
-    stockByCategory[product.category] =
-      (stockByCategory[product.category] || 0) + product.stock
+    const category = product.category || "Uncategorized"
+    stockByCategory[category] =
+      (stockByCategory[category] || 0) + product.stock
   })
 
   const stockData = Object.entries(stockByCategory).map(([category, stock]) => ({
@@ -64,11 +65,12 @@ async function getAnalyticsData() {
     stock,
   }))
 
-  // Products by category (for pie chart)
+  // Products by category (FIXED - handles null category)
   const productsByCategory: { [key: string]: number } = {}
   products.forEach((product) => {
-    productsByCategory[product.category] =
-      (productsByCategory[product.category] || 0) + 1
+    const category = product.category || "Uncategorized"
+    productsByCategory[category] =
+      (productsByCategory[category] || 0) + 1
   })
 
   const categoryData = Object.entries(productsByCategory).map(([name, value]) => ({
@@ -76,12 +78,14 @@ async function getAnalyticsData() {
     value,
   }))
 
-  // Top selling products
+  // Top selling products (FIXED - handles null productId)
   const productSales: {
     [key: string]: { name: string; quantity: number; revenue: number; image: string }
   } = {}
 
   sales.forEach((sale) => {
+    if (!sale.productId || !sale.product) return // Skip if no productId or product
+    
     if (!productSales[sale.productId]) {
       productSales[sale.productId] = {
         name: sale.product.name,
