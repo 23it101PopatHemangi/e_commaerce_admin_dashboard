@@ -1,12 +1,10 @@
----
-
-```md
 # 🛒 E-Commerce Admin Dashboard
 
 A modern **E-Commerce Admin Dashboard** built using **Next.js (App Router)**.  
 This project provides an admin interface to manage products, orders, users, and analytics for an e-commerce platform.
-Live link : https://e-commaerce-admin-dashboard.vercel.app/login
----
+
+🔗 Live Demo: https://e-commaerce-admin-dashboard.vercel.app/login
+
 
 ## 🚀 Features
 
