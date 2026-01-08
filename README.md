@@ -1,40 +1,170 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+---
 
-## Getting Started
+```md
+# 🛒 E-Commerce Admin Dashboard
 
-First, run the development server:
+A modern **E-Commerce Admin Dashboard** built using **Next.js (App Router)**.  
+This project provides an admin interface to manage products, orders, users, and analytics for an e-commerce platform.
+Live link : https://e-commaerce-admin-dashboard.vercel.app/login
+---
+
+## 🚀 Features
+
+- 📊 Analytics Dashboard – View sales, revenue, and performance metrics  
+- 📦 Product Management – Add, update, and delete products  
+- 🧾 Order Management – Track and manage customer orders  
+- 👤 User Management – Handle admin and user data  
+- 🎨 Reusable UI Components – Clean, modular component structure  
+- ⚡ Fast & Optimized – Powered by Next.js App Router  
+- 🔐 Scalable Architecture – Ready for authentication & role-based access  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 13+, React, TypeScript  
+- **Styling:** Tailwind CSS  
+- **Database:** Prisma ORM  
+- **State Management:** React Hooks  
+- **Linting:** ESLint  
+
+---
+
+## 📂 Project Structure
+
+```
+
+e_commaerce_admin_dashboard/
+│
+├── app/
+│   ├── (auth)/
+│   │   ├── login/
+│   │   └── register/
+│   ├── (dashboard)/
+│   │   ├── analytics/
+│   │   ├── orders/
+│   │   ├── products/
+│   │   └── users/
+│   ├── api/
+│   │   └── prisma/
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── ui/
+│   │   ├── button.tsx
+│   │   ├── badge.tsx
+│   │   ├── dialog.tsx
+│   │   └── table.tsx
+│   ├── navbar.tsx
+│   ├── sidebar.tsx
+│   └── header.tsx
+│
+├── hooks/
+│   ├── useModal.ts
+│   └── useTheme.ts
+│
+├── lib/
+│   ├── prisma.ts
+│   ├── utils.ts
+│   └── constants.ts
+│
+├── prisma/
+│   ├── schema.prisma
+│   └── migrations/
+│
+├── providers/
+│   ├── theme-provider.tsx
+│   └── modal-provider.tsx
+│
+├── public/
+│   ├── images/
+│   └── icons/
+│
+├── .gitignore
+├── components.json
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── package-lock.json
+└── README.md
+
+````
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/VishwaBhalodiya/e_commaerce_admin_dashboard.git
+cd e_commaerce_admin_dashboard
+````
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4️⃣ Open in browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧪 Development Notes
 
-To learn more about Next.js, take a look at the following resources:
+* Pages are managed using **Next.js App Router**
+* UI components are reusable and modular
+* Prisma ORM is used for database interaction
+* ESLint ensures clean and consistent code
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deployment
 
-## Deploy on Vercel
+This project can be easily deployed on **Vercel**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# e_commaerce_admin_dashboard
->>>>>>> 6f9f32b523e577a81572cab51fe793fd9c67c5a6
+1. Push the repository to GitHub
+2. Import the project in Vercel
+3. Deploy with default Next.js settings
+
+Documentation:
+[https://nextjs.org/docs/deployment](https://nextjs.org/docs/deployment)
+
+---
+
+## 👥 Contributors
+
+* **Vishwa Bhalodiya**
+* **Popat Hemangi (23IT101)**
+
+---
+
+## 📄 License
+
+This project is created for **educational and learning purposes only**.
+
+```
+
+---
+
+✅ **Now just:**
+- Open `README.md`
+- Select all
+- Paste
+- Commit
+
+If you want **screenshots section**, **badges**, or **college-project formatting**, say so and I’ll update it cleanly.
+```
