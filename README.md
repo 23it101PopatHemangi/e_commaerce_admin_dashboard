@@ -154,15 +154,4 @@ Documentation:
 
 This project is created for **educational and learning purposes only**.
 
-```
 
----
-
-✅ **Now just:**
-- Open `README.md`
-- Select all
-- Paste
-- Commit
-
-If you want **screenshots section**, **badges**, or **college-project formatting**, say so and I’ll update it cleanly.
-```
